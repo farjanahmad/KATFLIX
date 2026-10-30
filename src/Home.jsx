@@ -66,7 +66,7 @@ useEffect(() => {
                     className='surprise-button'
                     onClick={handleSurprise}
                     >
-                  surprise me
+                  SURPRISE ME
                   </button>
             </div>
         <div className='genre-section'>
@@ -79,8 +79,8 @@ useEffect(() => {
           <Link to="/genre/comedy">COMEDY</Link>
           <Link to="/genre/thriller">THRILLER</Link>
           </div>
-  
         </div>
+  
         
          <h2 className='popular-movies'>POPULAR ON KATFLIX</h2>
         
@@ -109,7 +109,7 @@ useEffect(() => {
           {selectedMovie && (
               <div className="movie-details">
         
-                <img src={`https://image.tmdb.org/t/p/w500${selectedMovie.poster_path}`}
+                <img className='movie-details-poster' src={`https://image.tmdb.org/t/p/w500${selectedMovie.poster_path}`}
                 alt={selectedMovie.title} />
         
                 <div className="movie-info">
